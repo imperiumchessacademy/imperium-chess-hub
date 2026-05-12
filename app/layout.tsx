@@ -9,22 +9,20 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Imperium Online Chess Hub',
   description: 'Track live league standings, tournaments, and player performance in real time.',
-  generator: 'v0.app',
+  openGraph: {
+    title: 'Imperium Online Chess Hub',
+    description: 'Track live league standings, tournaments, and player performance in real time.',
+    url: 'https://imperium-chess-hub.vercel.app',
+    siteName: 'Imperium Online Chess Hub',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Imperium Online Chess Hub',
+    description: 'Track live league standings, tournaments, and player performance in real time.',
+  },
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
+    icon: '/favicon.ico',
     apple: '/apple-icon.png',
   },
 }
